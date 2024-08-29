@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                <!-- Introduction-->
+                <header class="py-5">
+                    <div class="container px-5 pb-5"  id="about">
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-xxl-5">
+                                <!-- Introduction text content-->
+                                <div class="text-center text-xxl-start">
+                                    <div class="badge text-light bg-dark"><div class="text-uppercase">Design &middot; Development &middot; Marketing</div></div>
+                                    <div class="fs-3 fw-light text-muted">Hi, <strong>Your Name Here ! </strong> , a Web Developer with a passion for </div>
+                                    <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Creating Digital Experiences.</span></h1>
+                                    <span class="align-items-center">
+                                    <button type="button" class="btn btn-outline-dark btn-lg btn-block" onclick="window.location.href='#work';"> Our Works </button>
+                                    <button type="button" class="btn btn-dark btn-lg" onclick="window.location.href='#contact';"><i class="bi bi-telephone"></i> Contact Now </button>
+                                  </span>
+                                </div>
+                            </div>
+                            <div class="col-xxl-7">
+                                <!-- Introduction profile picture-->
+                                <div class="d-flex justify-content-center mt-5 mt-xxl-0 ">
+                                    <div class="profile bg-gradient-primary-to-secondary">
+                                      
+                                        <img class="img-fluid" src="assets/images/about_img-2.png" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                  <!-- /Introduction-->
+  
+                  <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md">
+                            <h2>My Skills</h2>
+                            <table class="table table-striped table-bordered">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Skill</th>
+                                        <th>Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>HTML</td>
+                                        <td>Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CSS</td>
+                                        <td>Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JavaScript</td>
+                                        <td>Beginner</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+    <!-- Portfolio Section -->
+    <div class="container mt-5" id="work">
+        <h2>My Work</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/Project-1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">A brief description of the project goes here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/Project-2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">A brief description of the project goes here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/Project-3.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">A brief description of the project goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container mt-5" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
